@@ -43,6 +43,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "build":"npm run build:lib:alarm-card",
     "build:lib:alarm-card": "npm run unlink:lib:alarm-card && npm run version:lib:alarm-card  && ng build c-alarm-card && npm run pack:lib:alarm-card && npm run publish:lib:alarm-card && npm run git:publish:lib:alarm-card",
     "unlink:lib:alarm-card": "cd dist/c-alarm-card  && npm unlink",
     "version:lib:alarm-card": "cd projects/c-alarm-card && npm --no-git-tag-version version patch -m \"Versiyon no: %s\"",
