@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-import { AlarmService } from '../alarm-widget/alarm.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import {MatButtonModule,MatSelectModule, MatIconModule} from '@angular/material';
@@ -20,14 +19,13 @@ import {AlarmCardModule} from '../../projects/c-alarm-card/src/lib/alarmcard.mod
     MatButtonModule,
     MatIconModule,
     MatSelectModule,
-    NgxChartsModule
+    NgxChartsModule,
+    AlarmCardModule
   ],
   declarations: [
     AppComponent,
-    HelloComponent,
-    AlarmCardModule
+    HelloComponent
   ],
   bootstrap: [AppComponent],
-  providers: [AlarmService]
 })
 export class AppModule { }

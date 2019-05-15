@@ -43,7 +43,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build:lib:alarm-card": "npm run unlink:lib:alarm-card && npm run version:lib:alarm-card  && ng build c-alarm-card && npm run pack:lib:alarm-card && npm run publish:lib:alarm-card && npm run git:publish:lib:alarm-card",
+    "build:lib:alarm-card": "npm run version:lib:alarm-card  && ng build c-alarm-card && npm run pack:lib:alarm-card && npm run publish:lib:alarm-card && npm run git:publish:lib:alarm-card",
     "unlink:lib:alarm-card": "cd dist/c-alarm-card  && npm unlink",
     "version:lib:alarm-card": "cd projects/c-alarm-card && npm --no-git-tag-version version patch -m \"Versiyon no: %s\"",
     "delete:lib:alarm-card": "echo silme && cd && cd dist && rmdir c-alarm-card /S /Q && cd",
@@ -52,7 +52,7 @@
     "echo": "echo \"naber la degisk\"",
     "git:publish:lib:alarm-card": "npm run git:commit:lib:alarm-card && git:push:lib:alarm-card",
     "git:init": "git init && git remote add https://...... ",
-    "git:commit:lib:alarm-card": "git commit -m \"paket npm publish yapildi\"",
+    "git:commit:lib:alarm-card": "git add . && git commit -m \"paket npm publish yapildi\"",
     "git:push:lib:alarm-card": "git push",
     "git:push:tags:lib:alarm-card": "git push --tags master",
     "test": "ng test",
