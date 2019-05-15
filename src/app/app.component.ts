@@ -7,7 +7,7 @@ import { AlarmCardComponent } from '../alarm-widget/alarm-card/alarm-card.compon
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular'
+  name = 'Angular';
   
   
 }
