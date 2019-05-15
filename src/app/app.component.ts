@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { AlarmCardComponent } from '../alarm-widget/alarm-card/alarm-card.component';
 
 @Component({
   selector: 'my-app',
