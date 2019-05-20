@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
-import { AlarmViewComponent } from './alarm-card/alarm-view/alarm-view.component';
-import {SpeedSetting,AlarmType,AlarmCardSettings, AlarmView} from './model'
+import {AlarmCardSettings, AlarmView} from './model'
 
 
 const settings:AlarmCardSettings = {

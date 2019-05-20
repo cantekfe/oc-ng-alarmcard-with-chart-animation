@@ -1,22 +1,22 @@
 <h1 style="text-align:left; margin: 2%">Alarm Ayarları</h1>
-<div class="ct-oc-card" *ngIf="settingsData">
+<div class="c-card" *ngIf="settingsData">
 
   <div>
-    <h3 class="card-row">Animasyon Hızı : </h3>
+    <h3 class="c-card-row">Animasyon Hızı : </h3>
     <select name="" id="">
       <option *ngFor="let s of settingsData.speedSettings" [value]="s.id">{{s.name}}</option>
     </select>
   </div>
 
   <div>
-    <h3 class="card-row">Odalar : </h3>
+    <h3 class="c-card-row">Odalar : </h3>
     <select name="" id="">
       <option *ngFor="let s of settingsData.roomList" [value]="s.id">{{s.name}}</option>
     </select>
   </div>
 
   <div>
-    <h3 class="card-row">Alarmlar : </h3>
+    <h3 class="c-card-row">Alarmlar : </h3>
     <select name="" id="">
       <option *ngFor="let s of settingsData.alarmList" [value]="s.id">{{s.name}}</option>
     </select>
@@ -24,10 +24,3 @@
 
 
 </div>
-
-
-
-<!-- <p *ngFor="let elements of settingsData">{{elements[0].name}}</p>
-
-<p *ngFor="let elements of settingsData">{{elements[1].name}}</p> -->
-<!-- interpolasyon -->

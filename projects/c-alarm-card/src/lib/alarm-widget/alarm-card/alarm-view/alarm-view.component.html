@@ -1,11 +1,11 @@
-<div [@trgSlide]="selectedIndex" class="slider-container">
-  <div *ngIf="selectedIndex==-1" class="slide">
+<div [@trgSlide]="selectedIndex" class="c-slider-container">
+  <div *ngIf="selectedIndex==-1" class="c-slide">
     <h1 style="text-align:left;margin: 2%">Alarmlar</h1>
     <ngx-charts-advanced-pie-chart class="ngchart" [results]="pieData" [view]=[655,180] [label]="'Toplam Alarm sayısı'">
     </ngx-charts-advanced-pie-chart>
   </div>
   
-  <div class="slide" *ngFor="let grp of _groupedAlarms">
+  <div class="c-slide" *ngFor="let grp of _groupedAlarms">
 
     <h1 class="{{grp[0].color}}" style="text-align:left;margin: 2% "><b *ngIf="grp">{{grp[0].name}} </b></h1>
     <div *ngFor="let a of grp">
@@ -17,10 +17,10 @@
     </div>
 
   </div>
-  <button mat-button class="btn-icon btn-left" (click)="previous()">
+  <button mat-button class="c-btn-icon c-btn-left" (click)="previous()">
     <mat-icon>keyboard_arrow_left</mat-icon>
   </button>
-  <button mat-button class="btn-icon btn-right" (click)="next()">
+  <button mat-button class="c-btn-icon c-btn-right" (click)="next()">
     <mat-icon>keyboard_arrow_right</mat-icon>
   </button>
 </div>
